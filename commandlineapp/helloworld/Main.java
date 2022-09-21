@@ -9,6 +9,7 @@ public class Main {
     double price = 6.54;
     float amount = 7.66F;
     String name = "Bryn";
+    String sentence = "   Hi There";
     Date now = new Date();
 
     System.out.println("Hello World");
@@ -17,6 +18,7 @@ public class Main {
     System.out.println(price);
     System.out.println(amount);
     System.out.println(now);
+    System.out.println(sentence.trim());
 
   }
 }
