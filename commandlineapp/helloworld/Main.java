@@ -9,7 +9,7 @@ public class Main {
     double price = 6.54;
     float amount = 7.66F;
     String name = "Bryn";
-    String sentence = "   Hi There";
+    String sentence = "   Hi There \"Bryn\" \n \t\\filename";
     Date now = new Date();
 
     System.out.println("Hello World");
