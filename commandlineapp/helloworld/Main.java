@@ -19,6 +19,7 @@ public class Main {
     int[][] numbers3 = new int[2][3];
     numbers3[1][1] = 1;
     int[][] numbers4 = { {2, 4, 6}, {8, 10, 12}, {14, 16, 18} };
+    final float PI = 3.14F;
 
     System.out.println("Hello World");
     System.out.println(name + " is " + age);
@@ -31,6 +32,7 @@ public class Main {
     System.out.println(numbers2.length);
     System.out.println(Arrays.deepToString(numbers3));
     System.out.println(Arrays.deepToString(numbers4));
+    System.out.println(PI);
 
   }
 }
