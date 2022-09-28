@@ -9,5 +9,8 @@ public class Main {
     int x = 1;
     x++;
     System.out.println(x);
+    String y = "2";
+    int z = Integer.parseInt(y) + 9;
+    System.out.println(z);
   }
 }
