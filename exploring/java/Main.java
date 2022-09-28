@@ -12,5 +12,12 @@ public class Main {
     String y = "2";
     int z = Integer.parseInt(y) + 9;
     System.out.println(z);
+    long result = Math.round(2.4);
+    System.out.println(result);
+    double result1 = Math.ceil(6.4F);
+    System.out.println(result1);
+    int result2 = (int) Math.round(Math.random() * 100);
+    System.out.println(result2);
+    
   }
 }
