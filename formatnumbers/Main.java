@@ -7,5 +7,7 @@ public class Main {
     NumberFormat currency = NumberFormat.getCurrencyInstance();
     String result = currency.format(123456.829);
     System.out.println(result);
+    String result1 = NumberFormat.getPercentInstance().format(0.4);
+    System.out.println(result1);
   }
 }
