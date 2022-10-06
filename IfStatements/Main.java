@@ -12,5 +12,9 @@ public class Main {
     } else System.out.println("it do be cold");
 
     System.out.println(hot);
+
+    int income = 130_000;
+    String className = income > 100_000 ? "First" : "Economy";
+    System.out.println(className);
   }
 }
