@@ -11,5 +11,11 @@ public class Main {
       System.out.println("Hello World " + i);
       i--;
     }
+
+    String[] fruits = { "apple", "orange", "pear"};
+
+    for (String fruit : fruits) {
+      System.out.println(fruit);
+    }
   }
 }
