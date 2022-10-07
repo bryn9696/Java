@@ -11,34 +11,34 @@ public class Main {
     float monthlyInterest = 0;
     int numberOfPayments = 0;
 
-    Scanner scanner = new Scanner(System.in);
-
-    while (true) {
-      System.out.print("Perincipal: ");
-      principal = scanner.nextInt();
-      if (principal >= 1000 && principal <= 1_000_000)
-        break;
-      System.out.println("Enter value between 1000 and 1000000");
-    }
-
-    while (true) {
-      System.out.print("Annual Interest Rate: ");
-      float annualInterest = scanner.nextFloat();
-      if (annualInterest >= 1 && annualInterest  < 30) {
-        monthlyInterest = annualInterest / PERCENT / MONTH_IN_YEAR;
-        break;
+    try (Scanner scanner = new Scanner(System.in)) {
+      while (true) {
+        System.out.print("Perincipal: ");
+        principal = scanner.nextInt();
+        if (principal >= 1000 && principal <= 1_000_000)
+          break;
+        System.out.println("Enter value between 1000 and 1000000");
       }
-      System.out.println("Enter a value between 1 and 30");
-    }
 
-    while (true) {
-      System.out.print("Period (Years): ");
-      byte years = scanner.nextByte();
-      if (years >= 1 && years <= 30) {
-        numberOfPayments = years * MONTH_IN_YEAR;
-        break;
+      while (true) {
+        System.out.print("Annual Interest Rate: ");
+        float annualInterest = scanner.nextFloat();
+        if (annualInterest >= 1 && annualInterest  < 30) {
+          monthlyInterest = annualInterest / PERCENT / MONTH_IN_YEAR;
+          break;
+        }
+        System.out.println("Enter a value between 1 and 30");
       }
-      System.out.println("Enter a value between 1 and 30");
+
+      while (true) {
+        System.out.print("Period (Years): ");
+        byte years = scanner.nextByte();
+        if (years >= 1 && years <= 30) {
+          numberOfPayments = years * MONTH_IN_YEAR;
+          break;
+        }
+        System.out.println("Enter a value between 1 and 30");
+      }
     }
 
     double mortgage = principal 
