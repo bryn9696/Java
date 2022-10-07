@@ -5,5 +5,11 @@ public class Main {
     for (int i = 0; i < 5; i++) {
       System.out.println("Hello World " + i);
     }
+
+    int i = 3;
+    while (i >= 0) {
+      System.out.println("Hello World " + i);
+      i--;
+    }
   }
 }
